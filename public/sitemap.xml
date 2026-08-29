@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://mrimawi.vercel.app/</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/about</loc>
+    <loc>https://mrimawi.vercel.app/about</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/projects</loc>
+    <loc>https://mrimawi.vercel.app/projects</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/skills</loc>
+    <loc>https://mrimawi.vercel.app/skills</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/experience</loc>
+    <loc>https://mrimawi.vercel.app/experience</loc>
   </url>
   <url>
-    <loc>https://yourdomain.com/contact</loc>
+    <loc>https://mrimawi.vercel.app/contact</loc>
   </url>
 </urlset>
