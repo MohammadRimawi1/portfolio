@@ -256,12 +256,12 @@ export const certifications: Certification[] = [
   {
     title: 'EXALT Summer Training Program',
     issuer: 'Exalt Technologies',
-    year: '2024',
+    year: '2026',
   },
   {
     title: 'Front-End Development with React',
     issuer: 'Online Certification',
-    year: '2023',
+    year: '2026',
   },
 ];
 
