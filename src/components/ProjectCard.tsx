@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Github, ArrowUpRight } from "lucide-react";
+import { Github, ArrowUpRight, ExternalLink } from "lucide-react";
 import type { Project } from "@/data/portfolio";
 
 const accentMap = {
@@ -97,24 +97,44 @@ export default function ProjectCard({
       </div>
 
       {/* Links */}
-      {project.github && (
+      {(project.demo || project.github) && (
         <div className="flex items-center gap-4 pt-6 border-t border-ink-700">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/link flex items-center gap-2 text-sm text-ink-100 hover:text-white transition-colors"
-          >
-            <Github
-              size={16}
-              className="text-ink-300 group-hover/link:text-moss-400 transition-colors"
-            />
-            <span className="link-underline">View on GitHub</span>
-            <ArrowUpRight
-              size={13}
-              className="text-ink-500 group-hover/link:text-moss-400 transition-colors"
-            />
-          </a>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/link flex items-center gap-2 text-sm text-ink-100 hover:text-white transition-colors"
+            >
+              <ExternalLink
+                size={16}
+                className="text-ink-300 group-hover/link:text-moss-400 transition-colors"
+              />
+              <span className="link-underline">Live demo</span>
+              <ArrowUpRight
+                size={13}
+                className="text-ink-500 group-hover/link:text-moss-400 transition-colors"
+              />
+            </a>
+          )}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/link flex items-center gap-2 text-sm text-ink-100 hover:text-white transition-colors"
+            >
+              <Github
+                size={16}
+                className="text-ink-300 group-hover/link:text-moss-400 transition-colors"
+              />
+              <span className="link-underline">View on GitHub</span>
+              <ArrowUpRight
+                size={13}
+                className="text-ink-500 group-hover/link:text-moss-400 transition-colors"
+              />
+            </a>
+          )}
         </div>
       )}
     </motion.article>
